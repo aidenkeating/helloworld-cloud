@@ -1,26 +1,26 @@
-# FeedHenry Hello World MBaaS Server
+# Hello World Cloud App
 [![Dependency Status](https://img.shields.io/david/feedhenry-templates/helloworld-cloud.svg?style=flat-square)](https://david-dm.org/feedhenry-templates/helloworld-cloud)
 
-This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for building your APIs. 
+This is a blank 'Hello World' cloud app which can be used as a starting point for your API.
 
 # Group Hello World API
 
-# hello [/hello]
+There is only one endpoint in the application.
 
-'Hello world' endpoint.
+## `POST /hello`
 
-## hello [POST] 
+Accepts an `application/json` body with the following structure:
 
-'Hello world' endpoint.
+```json
+{
+  "hello": "world"
+}
+```
 
-+ Request (application/json)
-    + Body
-            {
-              "hello": "world"
-            }
+Responds with the following `application/json` body:
 
-+ Response 200 (application/json)
-    + Body
-            {
-              "msg": "Hello world"
-            }
+```json
+{
+  "msg": "Hello world"
+}
+```
